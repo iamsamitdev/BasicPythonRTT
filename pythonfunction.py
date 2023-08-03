@@ -18,9 +18,7 @@ info("Samit")
 
 # ฟังก์ชันที่มีการรับค่าและมีการ return ค่าออกมา
 def area(width=0, height=0, *other):
-    # result = print("Area is ", width * height)
-    result = width * height
-    return result
+    return width * height
 
 
 # เรียกใช้งาน area()

@@ -5,16 +5,10 @@ import tkinter as tk
 # สร้างฟังก์ชันสำหรับการคำนวณเบอร์โทร
 def checkberdee():
 
-    # สร้างตัวแปรไว้เก็บผลรวมเบอร์โทร
-    total = 0
-
     # ตัวแปรเก็บผลการทำนาย
     predict = ""
 
-    # วนลูปหาผลรวมของเบอร์ 08935565659
-    for c in phone_number.get():
-        total += int(c)
-
+    total = sum(int(c) for c in phone_number.get())
     # ทำนายผลรวมของเบอร์
     if total in (9, 14, 15, 19, 23, 24, 32, 36, 40, 41, 42, 44, 45, 46, 50, 51, 54, 55, 56, 59, 63, 64, 65):
         predict = "ดีมาก"
