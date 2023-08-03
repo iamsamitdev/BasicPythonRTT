@@ -13,13 +13,12 @@ import time
 # Infinity loop
 r = 1
 while True:
-    if r <= 20:
-        if r % 2 == 1:
-            print(r, "On")
-        else:
-            print(r, "Off")
-    else:
+    if r > 20:
         break
+    if r % 2 == 1:
+        print(r, "On")
+    else:
+        print(r, "Off")
     r = r + 1
 
     # ทำการ sleep 1 วินาที
